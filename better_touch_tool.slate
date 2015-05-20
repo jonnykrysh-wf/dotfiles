@@ -1,0 +1,33 @@
+#BetterTouchTool-esque bingings
+alias quarter_screen screenSizeX/2;screenSizeY/2
+alias horizontal_half_screen screenSizeX;screenSizeY/2
+alias vertical_half_screen screenSizeX/2;screenSizeY
+alias whole_screen screenSizeX;screenSizeY
+
+alias top_left_quarter corner top-left resize:${quarter_screen}
+alias top_half corner top-left resize:${horizontal_half_screen}
+alias top_right_quarter corner top-right resize:${quarter_screen}
+alias left_half corner top-left resize:${vertical_half_screen}
+alias full_screen corner top-left resize:${whole_screen}
+alias right_half corner top-right resize:${vertical_half_screen}
+alias bottom_left_quarter corner bottom-left resize:${quarter_screen}
+alias bottom_half corner bottom-left resize:${horizontal_half_screen}
+alias bottom_right_quarter corner bottom-right resize:${quarter_screen}
+
+alias throw_0 throw 0
+alias throw_1 throw 1
+alias throw_next throw next
+
+bind q:alt ${top_left_quarter}
+bind w:alt ${top_half}
+bind e:alt ${top_right_quarter}
+bind a:alt ${left_half}
+bind s:alt ${full_screen}
+bind d:alt ${right_half}
+bind z:alt ${bottom_left_quarter}
+bind x:alt ${bottom_half}
+bind c:alt ${bottom_right_quarter}
+
+bind f:alt ${throw_next}
+bind pad0:alt ${throw_0}
+bind pad1:alt ${throw_1}
